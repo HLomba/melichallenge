@@ -7,7 +7,7 @@ from mysql.connector import pooling
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-# Configurar el pool de conexiones
+# Con figurar el pool de conexiones
 dbconfig = {
     "host": os.environ.get("DB_host"),
     "user": os.environ.get("DB_user"),
