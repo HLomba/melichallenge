@@ -3,7 +3,7 @@ import logging
 import mysql.connector
 from mysql.connector import pooling
 
-# Configurar el logger
+# Con figurar el logger
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
