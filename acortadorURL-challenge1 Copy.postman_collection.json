@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "eeec0e0d-7e9e-4f9b-bea0-bbb27dc6114a",
+		"name": "acortadorURL-challenge1 Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23642212"
+	},
+	"item": [
+		{
+			"name": "redirURL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://81j0xbf2kb.execute-api.eu-west-1.amazonaws.com/zQPuRN",
+					"protocol": "https",
+					"host": [
+						"81j0xbf2kb",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"zQPuRN"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shortURL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"long_url\": \"https://www.mercadolibre.com.uy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://81j0xbf2kb.execute-api.eu-west-1.amazonaws.com/acortar",
+					"protocol": "https",
+					"host": [
+						"81j0xbf2kb",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"acortar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rmvURL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_url\": \"http://cha-meli.rf.gd/zQPuRN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://81j0xbf2kb.execute-api.eu-west-1.amazonaws.com/rmvurl",
+					"protocol": "https",
+					"host": [
+						"81j0xbf2kb",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"rmvurl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
