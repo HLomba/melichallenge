@@ -20,17 +20,25 @@ Esta API permite eliminar una URL acortada, lo que conlleva a la eliminación co
 Cuando se ingresa la URL corta en el navegador, esta API está configurada para hacer una redirección 301 a la URL larga correspondiente. La ruta para redirigir está configurada como GET /{short_code}.
 
 
-### Configuración para Redirección
+## Configuración para Redirección 301
 Para lograr la redirección a la URL original, se implementó un subdominio gratuito llamado "infinityfree". Debido a las limitaciones de administración de un dominio gratuito, fue necesario modificar el archivo .htaccess con el siguiente código:  
 `RewriteEngine On`  
 `RewriteRule ^(.*)$ https://idendpoint.execute-api.eu-west-1.amazonaws.com/$1 [L,R=301]`
 
 Este código permite realizar la redirección de la petición al endpoint del API Gateway, manteniendo el código necesario para obtener y redireccionar correctamente a la URL larga.
 
-### Contenido:
-#### [challenge-shortURL.py](challenge-redirURL.py)
-#### [challenge-rmvURL.py](challenge-rmvURL.py)
-#### [challenge-redirURL.py](challenge-redirURL.py)
-#### [db.py](db.py)
-#### [acortadorURL-challenge.postman_collection.json](acortadorURL-challenge.postman_collection.json)
-#### [acortadorURL-melichallenge.jpg](acortadorURL-melichallenge.jpg)
+## Recursos:
+
+#### Funciones Lambda en Python:
+##### [challenge-shortURL.py](challenge-redirURL.py)
+##### [challenge-rmvURL.py](challenge-rmvURL.py)
+##### [challenge-redirURL.py](challenge-redirURL.py)
+
+#### Conexión a la base de datos RDS:
+##### [db.py](db.py)
+
+#### Colección de Postman en formato JSON:
+##### [acortadorURL-challenge.postman_collection.json](acortadorURL-challenge.postman_collection.json)
+
+#### Diagrama de la solución:
+##### [acortadorURL-melichallenge.jpg](acortadorURL-melichallenge.jpg)
