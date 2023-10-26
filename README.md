@@ -28,7 +28,7 @@ RewriteRule ^(.*)$ https://idendpoint.execute-api.eu-west-1.amazonaws.com/$1 [L,
 Este código permite realizar la redirección de la petición al endpoint del API Gateway, manteniendo el código necesario para obtener y redireccionar correctamente a la URL larga.
 
 ### Contenido:
-#### challenge-shortURL.py
+#### [challenge-shortURL.py](challenge-redirURL.py)
 #### challenge-rmvURL.py
 #### challenge-redirURL.py
 #### acortadorURL-challenge1 Copy.postman_collection
