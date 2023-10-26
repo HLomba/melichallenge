@@ -1,5 +1,11 @@
 # Melichallenge - Proyecto Acortador de URLs 
-Este proyecto consiste en un acortador de URLs que transforma URLs largas en URLs cortas, permitiendo agregar, eliminar y verificar la existencia de las mismas y realizar la redireccion a la URL original correspondiente. La solución se encuentra implementada en AWS utilizando servicios Lambda Function y API Gateway y InfinityFree(DNS).
+Este proyecto consiste en un acortador de URLs que transforma URLs largas en URLs cortas, permitiendo agregar, eliminar y verificar la existencia de las mismas y realizar la redireccion a la URL original correspondiente. La solución se encuentra implementada en:  
+###### AWS:
+- Lambda Function
+- API Gateway
+- RDS MySQL  
+###### DNS:  
+- InfinityFree.
 
 ## Funcionalidades
 El proyecto ofrece tres APIs principales:
@@ -25,5 +31,6 @@ Este código permite realizar la redirección de la petición al endpoint del AP
 #### [challenge-shortURL.py](challenge-redirURL.py)
 #### [challenge-rmvURL.py](challenge-rmvURL.py)
 #### [challenge-redirURL.py](challenge-redirURL.py)
+#### [db.py](db.py)
 #### [acortadorURL-challenge.postman_collection.json](acortadorURL-challenge.postman_collection.json)
 #### [acortadorURL-melichallenge.jpg](acortadorURL-melichallenge.jpg)
